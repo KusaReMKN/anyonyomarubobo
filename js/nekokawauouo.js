@@ -2,6 +2,7 @@
 
 const gen = document.getElementById('gen');
 const uouo = document.getElementById('uouo');
+const uolen = document.getElementById('uolen');
 const copy = document.getElementById('copy');
 const twitter = document.getElementById('twitter');
 
@@ -12,8 +13,9 @@ const nekokawatab = [
 
 function generateNekokawa()
 {
+	const uouomax = +uolen.value;
 	uouo.textContent = '';
-	for (let i = 0; i < 50; i++) {
+	for (let i = 0; i < uouomax; i++) {
 		let index = Math.floor(Math.random() * nekokawatab.length);
 		uouo.textContent += nekokawatab[index];
 	}
