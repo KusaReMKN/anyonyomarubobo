@@ -7,8 +7,8 @@ const copy = document.getElementById('copy');
 const twitter = document.getElementById('twitter');
 
 const nekokawatab = [
-	'ねこ', 'かわ', 'うお', 'うお',
-	'ね', 'こ', 'か', 'わ', 'う', 'お',
+	'あにょにょ', 'まるぼぼ', 'あにょ', 'まる', 'ぼぼ',
+	'にょ', 'ま', 'る',
 ];
 
 function generateNekokawa()
@@ -29,9 +29,9 @@ function copier()
 
 function twitterer()
 {
-	const nekokawaURI = 'https://kusaremkn.github.io/nekokawauouo/';
+	const nekokawaURI = 'https://kusaremkn.github.io/anyonyomarubobo/';
 	if (uouo.value.length === 0)
-		window.alert('ねこかわ躍りを忘れていませんか？');
+		window.alert('あにょにょまるぼぼを忘れていませんか？');
 	window.open('https://twitter.com/intent/tweet/?text='
 			+ encodeURIComponent(uouo.value)
 			+ '&url=' + encodeURIComponent(nekokawaURI));
